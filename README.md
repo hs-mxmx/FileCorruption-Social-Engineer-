@@ -3,11 +3,11 @@ From python file, to pdf or any file
 
 Taking "[Backdoor]Target" as main example, we're gonna explain how to convert .py files to executables or other files.
 
-(Windows)
+# (Windows)
 
-# pyinstaller.exe backdoor.py --onefile --noconsole -> executable file
+ pyinstaller.exe backdoor.py --onefile --noconsole -> executable file
 
-(Linux)
+# (Linux)
 
 1 - # wine pyinstaller.exe backdoor.py --onefile --noconsole -> executable file
 
@@ -25,7 +25,6 @@ This one also requieres python modification, by adding:
 4 - (Packaging the files to bypass antivirus and firewalls)
     cd /opt/upx
     ./upx /root/Desktop/Git\ Projects/Backdoor/\[Backdoor\]Target/AllInOne/dist/backdoor.exe -o compressed_backdoor.exe
-
 
 Another example we can go through is "download_execute.py", where we modify the file to execute another download instead of reporting
 
